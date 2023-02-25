@@ -6,29 +6,77 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-  }
+   }
   
+  .background {
+    display: none;
+    
+  }
+
+  .greyedBackground{
+    display: block;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2)
+
+    
+    
+  }
+
   .wrapper {
     width: 430px;
     margin: 0 auto;
-    height: 100%;
+    height: 0%;
     padding-top: 0px;
+  
   }
   
   #quiz {
     background-color: #34495E;
     padding-bottom: 60px;
-    width: 100%;
+    width: 50%;
     border-radius: 2%;
     color: #fff;
     text-align: center;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
   }
   .quiz {
     display: none;
   }
   .expand {
+    
+
+    position: absolute;
+
+    /* This sets the position of the element to be absolute, 
+    which means it's positioned relative to its closest 
+    positioned ancestor (or the body element if no ancestor is positioned). */
+
+    top: 50%;
+
+    /* This sets the distance of the top edge of the element 
+    from the top edge of the closest positioned ancestor 
+    to be 50% of the ancestor's height. */
+
+    left: 50%;
+
+    /* This sets the distance of the left edge of the element from the 
+    left edge of the closest positioned ancestor 
+    to be 50% of the ancestor's width. */
+
+    transform: translate(-50%, -50%);
+
+
+    /* This uses the translate function to move the element up and to the left 
+    by 50% of its own width and height, respectively. 
+    This centers the element in the middle of the ancestor. */
+  
+
     display: block;
+    
   }
   
   #quiz > h1 {

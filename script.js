@@ -106,10 +106,12 @@ function startGame() {
 }
 
 const quiz = document.querySelector(".quiz")
+const background = document.querySelector(".background")
 // Class list targets anything in the =>()
 // Toggle is an on & off switch
 function quiztime() {
     quiz.classList.toggle("expand");
+    background.classList.toggle("greyedBackground")
     
 }
 window.onload = function () {
